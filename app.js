@@ -30,7 +30,14 @@ const ItemCtrl = (function() {
     ],
     currentItems: null,
     totalCalories: 0
+  };
+
+  return { 
+    logData: () => {
+      return data;
+    }
   }
+
 })();
 
 // UI Controller
@@ -40,5 +47,6 @@ const UICtrl = (function() {
 
 // App Controller
 const App = (function(ItemCtrl, UICtrl) {
+  console.log(ItemCtrl.logData())
   
 })(ItemCtrl, UICtrl);
