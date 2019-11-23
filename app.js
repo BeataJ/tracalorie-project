@@ -32,6 +32,7 @@ const ItemCtrl = (function() {
     totalCalories: 0
   };
 
+  // Public method
   return { 
     logData: () => {
       return data;
@@ -42,12 +43,18 @@ const ItemCtrl = (function() {
 
 // UI Controller
 const UICtrl = (function() {
+
+  // Public method
+  return {
+    
+  }
   
 })();
 
 // App Controller
 const App = (function(ItemCtrl, UICtrl) {
   
+  // Public method
   return {
     init: () => {
       console.log('Initializing App...');
