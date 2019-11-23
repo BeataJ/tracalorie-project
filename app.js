@@ -47,6 +47,14 @@ const UICtrl = (function() {
 
 // App Controller
 const App = (function(ItemCtrl, UICtrl) {
-  console.log(ItemCtrl.logData())
+  
+  return {
+    init: () => {
+      console.log('Initializing App...');
+    }
+  }
   
 })(ItemCtrl, UICtrl);
+
+// Initalize App
+App.init();
