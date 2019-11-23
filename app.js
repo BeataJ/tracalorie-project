@@ -2,9 +2,15 @@
 
 // Item Controller
 const ItemCtrl = (function() {
-  console.log('item controller');
-})()
+  
+})();
 
 // UI Controller
+const UICtrl = (function() {
+  
+})();
 
 // App Controller
+const App = (function(ItemCtrl, UICtrl) {
+  
+})(ItemCtrl, UICtrl);
