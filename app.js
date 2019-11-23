@@ -61,6 +61,9 @@ const App = (function(ItemCtrl, UICtrl) {
   return {
     init: () => {
       console.log('Initializing App...');
+      const items = ItemCtrl.getItems();
+
+      console.log(items);
     }
   }
   
