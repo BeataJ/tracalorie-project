@@ -51,6 +51,9 @@ const ItemCtrl = (function() {
 
       // create new Item
       newItem = new Item(ID, name, calories);
+
+      // Add to items array
+      data.items.push(newItem);
     },
     logData: () => {
       return data;
