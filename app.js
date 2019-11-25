@@ -96,7 +96,7 @@ const UICtrl = (function() {
         calories: document.querySelector(UISelectors.itemCaloriesInput).value
       }
     },
-    addListItem: function() {
+    addListItem: function(item) {
       // Create li element
       const li = document.createElement('li');
       // Add class
