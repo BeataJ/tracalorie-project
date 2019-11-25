@@ -48,6 +48,9 @@ const ItemCtrl = (function() {
 
       // Calories to number
       calories = parseInt(calories);
+
+      // create new Item
+      newItem = new Item(ID, name, calories);
     },
     logData: () => {
       return data;
