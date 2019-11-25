@@ -122,7 +122,10 @@ const App = (function(ItemCtrl, UICtrl) {
     // Check for name and calories input
     if(input.name !== '' && input.calories !== '') {
       // Add item
-      const newItem = ItemCtrl.addItem(input.name, input.calories)
+      const newItem = ItemCtrl.addItem(input.name, input.calories);
+
+      // add item to UI list
+      UICtrl.addListItem(newItem);
     }
 
     e.preventDefault();
