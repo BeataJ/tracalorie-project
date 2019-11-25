@@ -139,6 +139,9 @@ const App = (function(ItemCtrl, UICtrl) {
 
       // add item to UI list
       UICtrl.addListItem(newItem);
+
+      // Clear fields
+      UICtrl.clearInput();
     }
 
     e.preventDefault();
