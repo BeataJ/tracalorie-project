@@ -37,6 +37,9 @@ const ItemCtrl = (function() {
     getItems: () => {
       return data.items;
     },
+    addItem: function(name, calories) {
+      console.log(name, calories)
+    },
     logData: () => {
       return data;
     }
