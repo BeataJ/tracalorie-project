@@ -101,6 +101,9 @@ const App = (function(ItemCtrl, UICtrl) {
 
       // Populate list with items
       UICtrl.populateItemList(items);
+
+      // Load event listener
+      loadEventListeners();
       
     }
   }
