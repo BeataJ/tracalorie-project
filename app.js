@@ -78,7 +78,13 @@ const UICtrl = (function() {
 // App Controller
 const App = (function(ItemCtrl, UICtrl) {
   // Load event listeners
+  const loadEventListeners = function(){
+    // Get UI selectors
+    const UISelectors = UICtrl.getSelectors();
 
+    // Add item event
+    document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit)
+  }
   
   // Public methods
   return {
