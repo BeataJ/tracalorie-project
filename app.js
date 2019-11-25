@@ -47,7 +47,8 @@ const ItemCtrl = (function() {
 // UI Controller
 const UICtrl = (function() {
   const UISelectors = {
-    itemList: '#item-list'
+    itemList: '#item-list',
+    addBtn: '.add-btn'
   }
 
   // Public methods
@@ -76,6 +77,8 @@ const UICtrl = (function() {
 
 // App Controller
 const App = (function(ItemCtrl, UICtrl) {
+  // Load event listeners
+
   
   // Public methods
   return {
