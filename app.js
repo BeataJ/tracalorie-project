@@ -85,6 +85,13 @@ const App = (function(ItemCtrl, UICtrl) {
     // Add item event
     document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit)
   }
+
+  // Add item submit
+  const itemAddSubmit = function(e) {
+    console.log('Add');
+
+    e.preventDefault();
+  }
   
   // Public methods
   return {
