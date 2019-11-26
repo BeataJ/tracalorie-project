@@ -28,7 +28,7 @@ const ItemCtrl = (function() {
       //   calories: 500
       // }
     ],
-    currentItems: null,
+    currentItem: null,
     totalCalories: 0
   };
 
@@ -68,7 +68,10 @@ const ItemCtrl = (function() {
       return found;
     },
     setCurrentItem: function(item) {
-      data.currentItems = item;
+      data.currentItem = item;
+    },
+    getCurrentItem: function() {
+      return data.currentItem;
     },
     getTotalCalories: function() {
       let total = 0;
