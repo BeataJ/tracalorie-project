@@ -84,7 +84,8 @@ const UICtrl = (function() {
     itemList: '#item-list',
     addBtn: '.add-btn',
     itemNameInput: '#item-name',
-    itemCaloriesInput: '#item-calories'
+    itemCaloriesInput: '#item-calories',
+    totalCalories: '.total-calories'
   }
 
   // Public methods
@@ -131,6 +132,9 @@ const UICtrl = (function() {
     },
     hideList: function() {
       document.querySelector(UISelectors.itemList).style.display = 'none';
+    },
+    shawTotalCalories: function(totalCalories) {
+      document.querySelector(UISelectors.totalCalories).textContent = totalCalories;
     },
     getSelectors: function() {
       return UISelectors;
