@@ -149,6 +149,9 @@ const App = (function(ItemCtrl, UICtrl) {
       // add item to UI list
       UICtrl.addListItem(newItem);
 
+      // Get total calories
+      const totalCalories = ItemCtrl.getTotalCalories();
+
       // Clear fields
       UICtrl.clearInput();
     }
