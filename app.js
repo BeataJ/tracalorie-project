@@ -57,6 +57,20 @@ const ItemCtrl = (function() {
 
       return newItem;
     },
+    getTotalCalories: function() {
+      let total = 0;
+
+      // Loop through items and add cals
+      data.items.forEach((item) => {
+        total += item.calories
+      });
+
+      // set total calories  in data structure
+      data.totalCalories = total;
+
+      // return total
+      return data.totalCalories;
+    },
     logData: () => {
       return data;
     }
