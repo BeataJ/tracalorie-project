@@ -165,6 +165,8 @@ const App = (function(ItemCtrl, UICtrl) {
 
       // Get total calories
       const totalCalories = ItemCtrl.getTotalCalories();
+      // Add total calories to UI
+      UICtrl.shawTotalCalories(totalCalories);
 
       // Clear fields
       UICtrl.clearInput();
