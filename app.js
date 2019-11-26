@@ -113,6 +113,9 @@ const UICtrl = (function() {
       document.querySelector(UISelectors.itemNameInput).value = '';
       document.querySelector(UISelectors.itemCaloriesInput).value = '';
     },
+    hideList: function() {
+      document.querySelector(UISelectors.itemList).style.display = 'none';
+    },
     getSelectors: function() {
       return UISelectors;
     }
