@@ -260,7 +260,11 @@ const App = (function(ItemCtrl, UICtrl) {
 
   // Update edit submit
   const itemUpdateSubmit = function(e) {
-    console.log('update');
+    // Get item input
+    const input = UICtrl.getItemInput();
+
+    // Update item
+    const updatedItem = ItemCtrl.updateItem(input.name, input.calories);
 
     e.preventDefault();
   }
