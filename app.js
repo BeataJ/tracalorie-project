@@ -379,9 +379,18 @@ const App = (function(ItemCtrl, UICtrl) {
     // Delete all items from data structure
     ItemCtrl.clearAllItems();
 
+    //// Get total calories
+    const totalCalories = ItemCtrl.getTotalCalories();
+    // Add total calories to UI
+    UICtrl.shawTotalCalories(totalCalories);
+
+    UICtrl.clearEditState();
+
     // Remove from UI
     UICtrl.removeItems();
 
+  // hide ul
+  UICtrl.hideList();
 
     e.preventDefault();
   }
