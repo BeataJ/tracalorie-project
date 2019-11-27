@@ -21,9 +21,17 @@ const StorageCtrl = (function(){
         // Re set ls
         localStorage.setItem('items', JSON.stringify(items));
       }
+    },
+    getItemsFromStorage: function() {
+      let items;
+      if(localStorage.getItem('items') === null) {
+        items = [];
+      } else {
+        items =JSON.parse(localStorage.getItem('items'));
+      }
+      return items;
     }
   }
-
 })();
 
 // Item Controller
