@@ -3,7 +3,7 @@ const StorageCtrl = (function(){
   // Public methods
   return {
     storeItem: function() {
-      
+
     }
   }
 
@@ -257,7 +257,7 @@ const UICtrl = (function() {
 })();
 
 // App Controller
-const App = (function(ItemCtrl, UICtrl) {
+const App = (function(ItemCtrl, StorageCtrl, UICtrl) {
   // Load event listeners
   const loadEventListeners = function(){
     // Get UI selectors
@@ -432,7 +432,7 @@ const App = (function(ItemCtrl, UICtrl) {
     }
   }
   
-})(ItemCtrl, UICtrl);
+})(ItemCtrl, StorageCtrl, UICtrl);
 
 // Initalize App
 App.init();
