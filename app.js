@@ -369,6 +369,10 @@ const App = (function(ItemCtrl, UICtrl) {
     // Delete all items from data structure
     ItemCtrl.clearAllItems();
 
+    // Remove from UI
+    UICtrl.removeItems();
+
+
     e.preventDefault();
   }
   
