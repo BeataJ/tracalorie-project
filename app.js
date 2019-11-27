@@ -309,6 +309,9 @@ const App = (function(ItemCtrl, StorageCtrl, UICtrl) {
       // Add total calories to UI
       UICtrl.shawTotalCalories(totalCalories);
 
+      // Store in localStorege
+      StorageCtrl.storeItem(newItem);
+
       // Clear fields
       UICtrl.clearInput();
     }
