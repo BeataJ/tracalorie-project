@@ -1,4 +1,13 @@
 // Storage Controller
+const StorageCtrl = (function(){
+  // Public methods
+  return {
+    storeItem: function() {
+      
+    }
+  }
+
+})();
 
 // Item Controller
 const ItemCtrl = (function() {
