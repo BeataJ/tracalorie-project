@@ -340,6 +340,9 @@ const App = (function(ItemCtrl, UICtrl) {
     // Delete from data structure
     ItemCtrl.deleteItem(currentItem.id);
 
+    // Delete from UI
+    UICtrl.deleteListItem(currentItem.id);
+
     e.preventDefault();
   }
   
