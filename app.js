@@ -436,7 +436,7 @@ const App = (function(ItemCtrl, StorageCtrl, UICtrl) {
     UICtrl.shawTotalCalories(totalCalories);
 
     // Delete from local storage
-    StorageCtrl.deleteItemFromStorage();
+    StorageCtrl.deleteItemFromStorage(currentItem.id);
 
     UICtrl.clearEditState();
 
