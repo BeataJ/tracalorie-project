@@ -241,7 +241,7 @@ const App = (function(ItemCtrl, UICtrl) {
     document.querySelector(UISelectors.updateBtn).addEventListener('click', itemUpdateSubmit);
 
     // Delete item event
-    document.querySelector(UISelectors.deleteBtn).addEventListener('click', itemDeleteItem);
+    document.querySelector(UISelectors.deleteBtn).addEventListener('click', itemDeleteSubmit);
 
     // Back button event
     document.querySelector(UISelectors.backBtn).addEventListener('click', UICtrl.clearEditState);
@@ -316,6 +316,17 @@ const App = (function(ItemCtrl, UICtrl) {
     UICtrl.shawTotalCalories(totalCalories);
 
     UICtrl.clearEditState();
+
+    e.preventDefault();
+  }
+
+  // Delete button event
+  const itemDeleteSubmit = function(e) {
+    // Get current item
+    const currentItem = ItemCtrl.getCurrentItem();
+
+    // Delete from data structure
+    ItemCtrl.deleteItem(currentItem.id);
 
     e.preventDefault();
   }
