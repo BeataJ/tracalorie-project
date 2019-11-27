@@ -360,6 +360,14 @@ const App = (function(ItemCtrl, UICtrl) {
 
     e.preventDefault();
   }
+
+  // Clear items event
+  const clearAllItemsClick = function(e) {
+    // Delete all items from data structure
+    ItemCtrl.clearAllItems();
+
+    e.preventDefault();
+  }
   
   // Public methods
   return {
