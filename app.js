@@ -264,6 +264,8 @@ const App = (function(ItemCtrl, UICtrl) {
     // Back button event
     document.querySelector(UISelectors.backBtn).addEventListener('click', UICtrl.clearEditState);
 
+    // Clear Item event
+    document.querySelector(UISelectors.clearBtn).addEventListener('click', clearAllItemsClick);
     
   }
 
