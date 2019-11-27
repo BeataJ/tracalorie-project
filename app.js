@@ -45,23 +45,24 @@ const ItemCtrl = (function() {
 
   // Data Structure / State
   const data = {
-    items: [
-      // {
-      //   id: 0,
-      //   name: 'Steak Dinner',
-      //   calories: 1200
-      // },
-      // {
-      //   id: 1,
-      //   name: 'Cooke',
-      //   calories: 400
-      // },
-      // {
-      //   id: 2,
-      //   name: 'Eggs',
-      //   calories: 500
-      // }
-    ],
+    // items: [
+    //   // {
+    //   //   id: 0,
+    //   //   name: 'Steak Dinner',
+    //   //   calories: 1200
+    //   // },
+    //   // {
+    //   //   id: 1,
+    //   //   name: 'Cooke',
+    //   //   calories: 400
+    //   // },
+    //   // {
+    //   //   id: 2,
+    //   //   name: 'Eggs',
+    //   //   calories: 500
+    //   // }
+    // ],
+    items: StorageCtrl.getItemsFromStorage(),
     currentItem: null,
     totalCalories: 0
   };
