@@ -208,6 +208,16 @@ const UICtrl = (function() {
       document.querySelector(UISelectors.itemCaloriesInput).value = ItemCtrl.getCurrentItem().calories;
       UICtrl.showEditState();
     },
+    removeItems: function () {
+      let listItems = document.querySelectorAll(UISelectors.listItems);
+
+      // turn node list to array
+      listItems = Array.from(listItems);
+
+      listItems.forEach((item) => {
+        item.remove();
+      })
+    },
     hideList: function() {
       document.querySelector(UISelectors.itemList).style.display = 'none';
     },
