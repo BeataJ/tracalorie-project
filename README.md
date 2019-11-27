@@ -1,0 +1,1 @@
+<p>Vanilla javascript project</p>
