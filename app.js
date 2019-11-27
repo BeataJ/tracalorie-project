@@ -50,6 +50,9 @@ const StorageCtrl = (function(){
         }
       });
       localStorage.setItem('items', JSON.stringify(items));
+    },
+    clearAllItemsFromStorage: function() {
+      localStorage.removeItem('items');
     }
   }
 })();
