@@ -430,6 +430,9 @@ const App = (function(ItemCtrl, StorageCtrl, UICtrl) {
     // Add total calories to UI
     UICtrl.shawTotalCalories(totalCalories);
 
+    // Delete from local storage
+    StorageCtrl.deleteItemFromStorage(currentItem.id);
+
     UICtrl.clearEditState();
 
     e.preventDefault();
@@ -444,9 +447,6 @@ const App = (function(ItemCtrl, StorageCtrl, UICtrl) {
     const totalCalories = ItemCtrl.getTotalCalories();
     // Add total calories to UI
     UICtrl.shawTotalCalories(totalCalories);
-
-    // Delete from local storage
-    StorageCtrl.deleteItemFromStorage(currentItem.id);
 
     UICtrl.clearEditState();
 
